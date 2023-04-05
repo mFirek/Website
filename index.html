@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul class="nav-links">
+            <li><a href="#header-content">Home</a></li>
+            <li><a href="#maps">Mapy</a></li>
+            <li><a href="#heroes">Bohaterowie</a></li>
+            <li><a href="#ranks">Dywizje</a></li>
+        </ul>
+    </nav>
+    <div id="progress-bar">
+        <div id="progress"></div>
+      </div>
+    <header id="header-content">
+        <div class="header-content">
+            <h1> LEAGUE OF LEGENDS </h1>
+            <div class ="line"></div>
+            <h2>RIOT GAMES</h2>
+            <a href="https://www.leagueoflegends.com/pl-pl/" class="ctn">Więcej</a>
+        </div>
+    </header>
+    <!-- Mapy -->
+    <div class="maps" id="maps">
+        <div class="title">
+            <h1>Mapy</h1>
+            <div class="line"></div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <img src="./img/1.jpg" alt="">
+                <h4>Summoner's Rift</h4>
+                <p>Summoner's Rift to najstarsza mapa w grze League of Legends. Pomimo drobnych zmian w strukturze oraz szacie graficznej, jej główny szkielet pozostał bez zmian przez ponad dekadę. Na obszarze gry zostały poprowadzone trzy linie, zwane Alejami. Wzdłuż Alej postawiono szereg budowli - Wieże i Inhibitory. To one wyznaczają umowną granicę terenu dla obu drużyn. Na obu krańcach mapy stoi najważniejszy obiekt dla zespołu - Nexus. Tuż za nim znajduje się punkt startowy oraz miejsce odrodzenia gracza.</p>
+                <a href="https://leagueoflegends.fandom.com/wiki/Summoner%27s_Rift" class="ctn">Więcej</a>
+            </div>
+            <div class="col">
+                <img src="./img/2.jpg" alt="">
+                <h4>Aram</h4>
+                <p>ARAM (All Random All Mid) - tryb gry PVP w grze League of Legends. Został po raz pierwszy udostępniony 29 czerwca 2012 roku. Po wejściu do kolejki, wszyscy bohaterowie otrzymują losowo bohatera z dostępnych (w tym z darmowej rotacji). Przy nietrafieniu w bohatera, gracz może wymienić się z innymi, jeśli go posiada w kolekcji. Drugą opcją jest ponowny wybór, który jest dostępny tylko wtedy, gdy będzie się mieć odpowiednią ilość punktów (250 na jedną próbę). Są zdobywane po zakończeniu rozgrywki.</p>
+                <a href="https://leagueoflegends.fandom.com/pl/wiki/ARAM" class="ctn">Więcej</a>
+            </div>
+        </div>
+    </div>
+    <!-- Bohaterowie -->
+    <div class="heroes" id="heroes">
+        <div class="heroes-content">
+            <h1> WYBIERZ SWOJEGO </h1> <h1>BOHATERA</h1>  
+            <div class="line"></div>               
+            <p>Mając do wyboru ponad 140 bohaterów, z pewnością znajdziesz kogoś dla siebie. Do perfekcji opanuj któregoś z nich albo wszystkich.</p>
+            <a href="https://www.leagueoflegends.com/pl-pl/champions/" class="ctn">Więcej</a>
+        </div>
+    </div>
+    <!-- Dywizje -->
+    <div class ="ranks" id="ranks">
+        <div class="ranks-content">
+            <h1> DYWIZJE </h1>
+            <div class="line"></div>
+            <p> Wspinaj się po szczeblach dywizji, aby stać się jednym z najlepszych graczy w League of Legends. Każda kolejna dywizja to większe wyzwanie i szansa na poznawanie nowych, ciekawych ludzi. Nie daj się zatrzymać na swojej obecnej pozycji - weź udział w rywalizacji i awansuj na wyższe dywizje. </p>
+            <a href="https://leagueoflegends.fandom.com/wiki/Rank_(League_of_Legends)" class="ctn">Więcej</a>
+        </div>
+    </div>
+    <div class="ranksimg"></div>
+    <!-- Footer -->
+    <section class="footer">
+        <p>Wykonał: Maciej Firek :) </p>
+    </section>
+
+    <script>
+        window.addEventListener('scroll', function() {
+          let progress = document.getElementById('progress');
+          let max = document.body.scrollHeight - window.innerHeight;
+          let value = (window.pageYOffset / max) * 100;
+    
+          progress.style.width = value + '%';
+        });
+      </script>
+    
+</body>
+</html>

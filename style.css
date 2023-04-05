@@ -1,0 +1,221 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+header{
+    width: 100vw;   
+    height: 100vh;
+    background-image: url(./img/tlo.png);
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.navbar a{
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+    text-decoration: underline;
+    font-weight: bold;
+    text-align: right;
+}
+a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.header-content{
+    margin-bottom: 150px;
+    color: white;
+    text-align: center;
+}
+.header-content h1{
+    font-size: 7vmin;
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.line{
+    width: 150px;
+    height: 5px;
+    background-color: #fc0362;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+.header-content h2{
+    font-size: 4vmin;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    color: white; 
+    text-shadow: black 0.1em 0.1em 0.2em;
+}
+.ctn{
+    padding: 8px 15px;
+    background-color: #089aad;
+    border-radius: 20px;
+    margin-bottom: 10px;
+}
+body, html{
+    overflow-x: hidden;
+}
+.navbar{
+    position:fixed;
+    top: 0;
+    left: 0;
+    display:flex;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 20px;
+    padding-right: 50px;
+    color:rgb(0, 0, 0);
+    z-index: 1;
+}
+ul{
+    list-style: none;
+}
+.nav-links{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+}
+.nav-links li{
+    margin-left: 40px;
+    text-align: right;
+}
+
+/*Mapy*/
+section{
+    width: 90%;
+    margin: 80px auto;
+
+}
+.title{
+    text-align: center;
+    font-size: 4vmin;
+    color: black;
+}
+.row{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+}
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.maps .row{
+    margin-top: 50px;
+}
+h4{
+    font-size: 3vmin;
+    color: black;
+    margin: 20px auto;
+}
+p{
+    color:#201313a9;
+    padding:0px,40px;
+}
+.maps .ctn{
+    margin-top: 20px;
+}
+/*Bohaterowie*/
+.heroes{
+    width: 100%;
+    height: 80vh;
+    background-image: url(./img/3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+}
+.heroes-content{
+    width:60%;
+    padding:50px;
+    color:whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.heroes-content h1{
+    font-size: 7vmin;
+    color: white;
+    margin:10px;
+}
+.heroes-content p{
+    color: white;
+    font-size: 2vmin;
+    margin: 30px;
+}
+.heroes-content .ctn{
+    margin-top: 40px;
+}
+/*Dywizje*/
+.ranks{
+    width: 100%;
+    background-color: #382863;
+
+}
+.ranksimg{
+    width: 100%;
+    height: 110vh;
+    background-image: url(./img/ranks.png);
+    background-color: #382863;
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.ranks-content{
+    width:60%;
+    padding:50px;
+    color:whitesmoke;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+}
+.ranks-content h1{
+    font-size: 7vmin;
+    color:rgb(255, 255, 255);
+    margin:10px;
+    align-items: center;
+
+}
+.ranks-content p{
+    color:rgb(255, 255, 255);
+    font-size: 2vmin;
+    margin: 30px;
+}
+.ranks-content .ctn{
+    margin-top: 40px;
+}
+
+.footer{
+    width:100%;
+    height: 100px;
+    padding: 20px 80px;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #382863e5;
+}
+.footer p{
+    color: white;
+    font-size: 1.5vmin;
+    margin-top: 30px;
+}
+
+#progress-bar {
+    width: 100%;
+    height: 5px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #ffffff;
+  }
+
+#progress {
+    height: 100%;
+    background-color: #f800e3;
+  }
